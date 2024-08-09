@@ -79,7 +79,6 @@
             max-height: 100%;
             position: relative;
             top: -20px;
-            /* Adjust this value to move the video higher */
         }
         
         .small-text {
@@ -115,15 +114,12 @@
             font-weight: bold;
             text-transform: uppercase;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            /* Smooth transition */
         }
         
         .cta-button:hover {
             background-color: #e5b846;
             transform: translateX(-50%) translateY(-3px);
-            /* Lift the button */
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            /* Add shadow for a more lifted look */
         }
     </style>
 </head>
@@ -231,7 +227,7 @@
             showSlide(currentIndex);
         }
 
-        setInterval(nextSlide, 2000); // Change slide every 2 seconds
+        setInterval(nextSlide, 2000); 
     </script>
 </body>
 
