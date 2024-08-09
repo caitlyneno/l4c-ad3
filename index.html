@@ -73,12 +73,18 @@
             top: -15px;
         }
         
+        #last-slide {
+            position: relative;
+            top: -20px;
+        }
+        
         .video {
             width: 100%;
             height: auto;
             max-height: 100%;
             position: relative;
             top: -20px;
+            /* Adjust this value to move the video higher */
         }
         
         .small-text {
@@ -114,12 +120,15 @@
             font-weight: bold;
             text-transform: uppercase;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            /* Smooth transition */
         }
         
         .cta-button:hover {
             background-color: #e5b846;
             transform: translateX(-50%) translateY(-3px);
+            /* Lift the button */
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            /* Add shadow for a more lifted look */
         }
     </style>
 </head>
@@ -196,14 +205,13 @@
                 <div class="small-text">lawyers 4 cyclists - cyclinglaw.com</div>
             </div>
             <div class="slide">
-                <img src="l4c-white.svg" alt="Cycling Law Logo" class="logo" />
-                <div class="text">
+                <img src="/images/l4c-white.svg" alt="Cycling Law Logo" class="logo" />
+                <div class="text" id="last-slide">
                     <b>ADVOCATING FOR</b>
                     <br /><b> INJURED</b>
                     <span style="color: #f7cc52"><b>CYCLISTS</b></span>
                 </div>
                 <button class="cta-button">Learn More</button>
-
                 <div class="small-text">lawyers 4 cyclists - cyclinglaw.com</div>
             </div>
         </a>
@@ -227,7 +235,7 @@
             showSlide(currentIndex);
         }
 
-        setInterval(nextSlide, 2000); 
+        setInterval(nextSlide, 2000); // Change slide every 2 seconds
     </script>
 </body>
 
